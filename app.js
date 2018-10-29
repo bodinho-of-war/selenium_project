@@ -1,7 +1,11 @@
-let chrome = require('selenium-webdriver/chrome');
-     let {Builder} = require('selenium-webdriver');
+const {Builder, By, Key, until} = require('selenium-webdriver');
 
-     let driver = new Builder()
-         .forBrowser('chrome')
-         .setChromeOptions(new chrome.Options().headless())
-         .build();
+var driver = new Builder()
+    .forBrowser('firefox')
+    .build();
+
+driver.get('http://www.google.com/ncr')
+    .then(_ =>
+        driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN))
+    .then(_ => driver.wait(until.titleIs('webdriver - Google Search'), 1000))
+    .then(_ => driver.quit());
