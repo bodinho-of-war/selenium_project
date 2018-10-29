@@ -1,0 +1,27 @@
+{
+  "name": "selenium_project",
+  "version": "1.0.0",
+  "description": "web automation test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bodinho-of-war/selenium_project.git"
+  },
+  "keywords": [
+    "automation",
+    "selenium",
+    "js"
+  ],
+  "author": "Luan Portela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bodinho-of-war/selenium_project/issues"
+  },
+  "homepage": "https://github.com/bodinho-of-war/selenium_project#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
